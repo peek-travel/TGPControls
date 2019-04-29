@@ -114,7 +114,7 @@ public class TGPCamelLabels: TGPCamelLabels_INTERFACE_BUILDER {
     // Where should regular labels be drawn (10: centerY, 3: top, 4: bottom)
     // By default, emphasized labels are animated towards the bottom of the frame.
     // This creates the dock effect (camel). They can also be centered vertically, or move up (reverse effect).
-    @IBInspectable public var regularLayout:Int = NSLayoutConstraint.Attribute.rawValue {
+    @IBInspectable public var regularLayout:Int = NSLayoutConstraint.Attribute.bottom.rawValue {
         didSet {
             if !validAttributes.contains(regularLayout) {
                 regularLayout = NSLayoutConstraint.Attribute.bottom.rawValue
